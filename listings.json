@@ -1,0 +1,9 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/hello-python/index.html",
+      "/posts/hello-r/index.html"
+    ]
+  }
+]

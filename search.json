@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "posts/hello-r/index.html",
+    "href": "posts/hello-r/index.html",
+    "title": "Hello, R",
+    "section": "",
+    "text": "This post is an .Rmd file rendered by Quarto. Same chunk syntax you know from Rmarkdown — Quarto picks up the knitr engine automatically when it sees R chunks."
+  },
+  {
+    "objectID": "posts/hello-r/index.html#a-tiny-dataset",
+    "href": "posts/hello-r/index.html#a-tiny-dataset",
+    "title": "Hello, R",
+    "section": "A tiny dataset",
+    "text": "A tiny dataset\n\nlibrary(tibble)\nlibrary(dplyr)\n\nsales &lt;- tibble(\n  month   = seq(as.Date(\"2026-01-01\"), by = \"month\", length.out = 6),\n  revenue = c(120, 138, 155, 162, 180, 205),\n  channel = \"organic\"\n)\nsales\n\n# A tibble: 6 × 3\n  month      revenue channel\n  &lt;date&gt;       &lt;dbl&gt; &lt;chr&gt;  \n1 2026-01-01     120 organic\n2 2026-02-01     138 organic\n3 2026-03-01     155 organic\n4 2026-04-01     162 organic\n5 2026-05-01     180 organic\n6 2026-06-01     205 organic"
+  },
+  {
+    "objectID": "posts/hello-r/index.html#a-quick-plot",
+    "href": "posts/hello-r/index.html#a-quick-plot",
+    "title": "Hello, R",
+    "section": "A quick plot",
+    "text": "A quick plot\n\nlibrary(ggplot2)\n\nggplot(sales, aes(month, revenue)) +\n  geom_line() +\n  geom_point(size = 2) +\n  labs(title = \"Monthly revenue, organic channel\",\n       x = NULL, y = \"Revenue ($k)\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "posts/hello-r/index.html#notes",
+    "href": "posts/hello-r/index.html#notes",
+    "title": "Hello, R",
+    "section": "Notes",
+    "text": "Notes\n\nQuarto renders .Rmd files the same way it renders .qmd files with R chunks. If you prefer the newer Quarto syntax, just rename the file to index.qmd.\nUse chunk options as YAML-style #| comments (Quarto convention), or the classic inline {r, fig.width=6} form — both work."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHello, Python\n\n\nAn example Quarto post with executable Python code.\n\n\n\npython\n\nexample\n\n\n\n\n\n\nMay 15, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nHello, R\n\n\nAn example Quarto post with executable R code.\n\n\n\nr\n\ntidyverse\n\nexample\n\n\n\n\n\n\nMay 14, 2026\n\n1 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Tiara — a data scientist / analyst working across Python and R.\nThis site collects write-ups of projects I’ve built or analyses I’ve run. Each post is a reproducible document: the code blocks you see are the actual code that produced the figures and tables alongside them."
+  },
+  {
+    "objectID": "about.html#tools-i-reach-for",
+    "href": "about.html#tools-i-reach-for",
+    "title": "About",
+    "section": "Tools I reach for",
+    "text": "Tools I reach for\n\nPython: pandas, scikit-learn, matplotlib, polars\nR: tidyverse, ggplot2, tidymodels\nStorage & pipelines: Snowflake, dbt, dlt, Airflow\nReporting: Quarto, Rmarkdown, Jupyter"
+  },
+  {
+    "objectID": "walkthrough.html",
+    "href": "walkthrough.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "walkthrough.html#markdown",
+    "href": "walkthrough.html#markdown",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "walkthrough.html#code-cell",
+    "href": "walkthrough.html#code-cell",
+    "title": "Hello, Quarto",
+    "section": "Code Cell",
+    "text": "Code Cell\nHere is a Python code cell:\n\nimport os\nos.cpu_count()\n\n12"
+  },
+  {
+    "objectID": "walkthrough.html#equation",
+    "href": "walkthrough.html#equation",
+    "title": "Hello, Quarto",
+    "section": "Equation",
+    "text": "Equation\nUse LaTeX to write equations:\n\\[\n\\chi' = \\sum_{i=1}^n k_i s_i^2\n\\]"
+  },
+  {
+    "objectID": "posts/hello-python/index.html",
+    "href": "posts/hello-python/index.html",
+    "title": "Hello, Python",
+    "section": "",
+    "text": "This post is a .qmd file with Python code chunks. Quarto runs the code at render time and inlines the output (numbers, tables, plots) into the page. To start a new post, copy this folder and edit index.qmd."
+  },
+  {
+    "objectID": "posts/hello-python/index.html#a-tiny-dataset",
+    "href": "posts/hello-python/index.html#a-tiny-dataset",
+    "title": "Hello, Python",
+    "section": "A tiny dataset",
+    "text": "A tiny dataset\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"month\": pd.date_range(\"2026-01-01\", periods=6, freq=\"MS\"),\n    \"revenue\": [120, 138, 155, 162, 180, 205],\n    \"channel\": [\"organic\"] * 6,\n})\ndf\n\n\n\n\n\n\n\n\nmonth\nrevenue\nchannel\n\n\n\n\n0\n2026-01-01\n120\norganic\n\n\n1\n2026-02-01\n138\norganic\n\n\n2\n2026-03-01\n155\norganic\n\n\n3\n2026-04-01\n162\norganic\n\n\n4\n2026-05-01\n180\norganic\n\n\n5\n2026-06-01\n205\norganic"
+  },
+  {
+    "objectID": "posts/hello-python/index.html#a-quick-plot",
+    "href": "posts/hello-python/index.html#a-quick-plot",
+    "title": "Hello, Python",
+    "section": "A quick plot",
+    "text": "A quick plot\n\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots(figsize=(6, 3.5))\nax.plot(df[\"month\"], df[\"revenue\"], marker=\"o\")\nax.set_title(\"Monthly revenue, organic channel\")\nax.set_ylabel(\"Revenue ($k)\")\nax.grid(alpha=0.3)\nfig.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "posts/hello-python/index.html#notes",
+    "href": "posts/hello-python/index.html#notes",
+    "title": "Hello, Python",
+    "section": "Notes",
+    "text": "Notes\n\nUse jupyter: python3 in the YAML header to enable Python execution.\nHeavy outputs (model training, big queries) get cached on first render via freeze: auto in _quarto.yml — only the chunks you change get re-executed."
+  }
+]

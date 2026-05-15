@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>tirfood</title>
+<link>https://tiaradwiputri.github.io/tirfood/</link>
+<atom:link href="https://tiaradwiputri.github.io/tirfood/index.xml" rel="self" type="application/rss+xml"/>
+<description>Data science and analytics projects by Tiara.</description>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Thu, 14 May 2026 17:00:00 GMT</lastBuildDate>
+<item>
+  <title>Hello, Python</title>
+  <link>https://tiaradwiputri.github.io/tirfood/posts/hello-python/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>This post is a <code>.qmd</code> file with <strong>Python code chunks</strong>. Quarto runs the code at render time and inlines the output (numbers, tables, plots) into the page. To start a new post, copy this folder and edit <code>index.qmd</code>.</p>
+<section id="a-tiny-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="a-tiny-dataset">A tiny dataset</h2>
+<div id="3fccd742" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb1-2"></span>
+<span id="cb1-3">df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.DataFrame({</span>
+<span id="cb1-4">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"month"</span>: pd.date_range(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2026-01-01"</span>, periods<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, freq<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"MS"</span>),</span>
+<span id="cb1-5">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"revenue"</span>: [<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">120</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">138</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">155</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">162</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">180</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">205</span>],</span>
+<span id="cb1-6">    <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"channel"</span>: [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"organic"</span>] <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">*</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>,</span>
+<span id="cb1-7">})</span>
+<span id="cb1-8">df</span></code></pre></div></div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">month</th>
+<th data-quarto-table-cell-role="th">revenue</th>
+<th data-quarto-table-cell-role="th">channel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>2026-01-01</td>
+<td>120</td>
+<td>organic</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>2026-02-01</td>
+<td>138</td>
+<td>organic</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>2026-03-01</td>
+<td>155</td>
+<td>organic</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>2026-04-01</td>
+<td>162</td>
+<td>organic</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>2026-05-01</td>
+<td>180</td>
+<td>organic</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>2026-06-01</td>
+<td>205</td>
+<td>organic</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="a-quick-plot" class="level2">
+<h2 class="anchored" data-anchor-id="a-quick-plot">A quick plot</h2>
+<div id="b4d55b39" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> matplotlib.pyplot <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> plt</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">fig, ax <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> plt.subplots(figsize<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>, <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3.5</span>))</span>
+<span id="cb2-4">ax.plot(df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"month"</span>], df[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"revenue"</span>], marker<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"o"</span>)</span>
+<span id="cb2-5">ax.set_title(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Monthly revenue, organic channel"</span>)</span>
+<span id="cb2-6">ax.set_ylabel(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Revenue ($k)"</span>)</span>
+<span id="cb2-7">ax.grid(alpha<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.3</span>)</span>
+<span id="cb2-8">fig.tight_layout()</span>
+<span id="cb2-9">plt.show()</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://tiaradwiputri.github.io/tirfood/posts/hello-python/index_files/figure-html/cell-3-output-1.png" width="564" height="326" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<ul>
+<li>Use <code>jupyter: python3</code> in the YAML header to enable Python execution.</li>
+<li>Heavy outputs (model training, big queries) get cached on first render via <code>freeze: auto</code> in <a href="../../_quarto.yml">_quarto.yml</a> — only the chunks you change get re-executed.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>example</category>
+  <guid>https://tiaradwiputri.github.io/tirfood/posts/hello-python/</guid>
+  <pubDate>Thu, 14 May 2026 17:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hello, R</title>
+  <link>https://tiaradwiputri.github.io/tirfood/posts/hello-r/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>This post is an <strong><code>.Rmd</code> file</strong> rendered by Quarto. Same chunk syntax you know from Rmarkdown — Quarto picks up the <code>knitr</code> engine automatically when it sees R chunks.</p>
+<section id="a-tiny-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="a-tiny-dataset">A tiny dataset</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tibble)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(dplyr)</span>
+<span id="cb1-3"></span>
+<span id="cb1-4">sales <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tibble</span>(</span>
+<span id="cb1-5">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">month   =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">seq</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.Date</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2026-01-01"</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">by =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"month"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">length.out =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>),</span>
+<span id="cb1-6">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">revenue =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">120</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">138</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">155</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">162</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">180</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">205</span>),</span>
+<span id="cb1-7">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">channel =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"organic"</span></span>
+<span id="cb1-8">)</span>
+<span id="cb1-9">sales</span></code></pre></div></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+  month      revenue channel
+  &lt;date&gt;       &lt;dbl&gt; &lt;chr&gt;  
+1 2026-01-01     120 organic
+2 2026-02-01     138 organic
+3 2026-03-01     155 organic
+4 2026-04-01     162 organic
+5 2026-05-01     180 organic
+6 2026-06-01     205 organic</code></pre>
+</div>
+</div>
+</section>
+<section id="a-quick-plot" class="level2">
+<h2 class="anchored" data-anchor-id="a-quick-plot">A quick plot</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggplot2)</span>
+<span id="cb3-2"></span>
+<span id="cb3-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(sales, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(month, revenue)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-4">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_line</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-5">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_point</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-6">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Monthly revenue, organic channel"</span>,</span>
+<span id="cb3-7">       <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">NULL</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Revenue ($k)"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-8">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_minimal</span>()</span></code></pre></div></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://tiaradwiputri.github.io/tirfood/posts/hello-r/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<ul>
+<li>Quarto renders <code>.Rmd</code> files the same way it renders <code>.qmd</code> files with R chunks. If you prefer the newer Quarto syntax, just rename the file to <code>index.qmd</code>.</li>
+<li>Use chunk options as YAML-style <code>#|</code> comments (Quarto convention), or the classic inline <code>{r, fig.width=6}</code> form — both work.</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>r</category>
+  <category>tidyverse</category>
+  <category>example</category>
+  <guid>https://tiaradwiputri.github.io/tirfood/posts/hello-r/</guid>
+  <pubDate>Wed, 13 May 2026 17:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
