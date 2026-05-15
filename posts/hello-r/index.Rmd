@@ -1,0 +1,52 @@
+---
+title: "Hello, R"
+subtitle: "An example Quarto post with executable R code."
+date: "2026-05-14"
+categories: [r, tidyverse, example]
+format:
+  html:
+    code-fold: false
+---
+
+This post is an **`.Rmd` file** rendered by Quarto. Same chunk syntax you
+know from Rmarkdown — Quarto picks up the `knitr` engine automatically
+when it sees R chunks.
+
+## A tiny dataset
+
+```{r}
+#| message: false
+library(tibble)
+library(dplyr)
+
+sales <- tibble(
+  month   = seq(as.Date("2026-01-01"), by = "month", length.out = 6),
+  revenue = c(120, 138, 155, 162, 180, 205),
+  channel = "organic"
+)
+sales
+```
+
+## A quick plot
+
+```{r}
+#| message: false
+#| fig-width: 6
+#| fig-height: 3.5
+library(ggplot2)
+
+ggplot(sales, aes(month, revenue)) +
+  geom_line() +
+  geom_point(size = 2) +
+  labs(title = "Monthly revenue, organic channel",
+       x = NULL, y = "Revenue ($k)") +
+  theme_minimal()
+```
+
+## Notes
+
+- Quarto renders `.Rmd` files the same way it renders `.qmd` files with R
+  chunks. If you prefer the newer Quarto syntax, just rename the file to
+  `index.qmd`.
+- Use chunk options as YAML-style `#|` comments (Quarto convention), or
+  the classic inline `{r, fig.width=6}` form — both work.

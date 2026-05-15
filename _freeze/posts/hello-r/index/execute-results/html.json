@@ -1,0 +1,17 @@
+{
+  "hash": "7f804318d2f86f9284452762022a6f5d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Hello, R\"\nsubtitle: \"An example Quarto post with executable R code.\"\ndate: \"2026-05-14\"\ncategories: [r, tidyverse, example]\nformat:\n  html:\n    code-fold: false\n---\n\nThis post is an **`.Rmd` file** rendered by Quarto. Same chunk syntax you\nknow from Rmarkdown — Quarto picks up the `knitr` engine automatically\nwhen it sees R chunks.\n\n## A tiny dataset\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(tibble)\nlibrary(dplyr)\n\nsales <- tibble(\n  month   = seq(as.Date(\"2026-01-01\"), by = \"month\", length.out = 6),\n  revenue = c(120, 138, 155, 162, 180, 205),\n  channel = \"organic\"\n)\nsales\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n# A tibble: 6 × 3\n  month      revenue channel\n  <date>       <dbl> <chr>  \n1 2026-01-01     120 organic\n2 2026-02-01     138 organic\n3 2026-03-01     155 organic\n4 2026-04-01     162 organic\n5 2026-05-01     180 organic\n6 2026-06-01     205 organic\n```\n\n\n:::\n:::\n\n\n## A quick plot\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\nggplot(sales, aes(month, revenue)) +\n  geom_line() +\n  geom_point(size = 2) +\n  labs(title = \"Monthly revenue, organic channel\",\n       x = NULL, y = \"Revenue ($k)\") +\n  theme_minimal()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=576}\n:::\n:::\n\n\n## Notes\n\n- Quarto renders `.Rmd` files the same way it renders `.qmd` files with R\n  chunks. If you prefer the newer Quarto syntax, just rename the file to\n  `index.qmd`.\n- Use chunk options as YAML-style `#|` comments (Quarto convention), or\n  the classic inline `{r, fig.width=6}` form — both work.\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

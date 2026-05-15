@@ -1,0 +1,33 @@
+# Quarto build artifacts
+/.quarto/
+/_site/
+**/*.quarto_ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Logs
+*.log

@@ -1,0 +1,28 @@
+---
+title: "About"
+about:
+  template: trestles
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/tiaradwptr
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/
+    - icon: envelope
+      text: Email
+      href: mailto:tiara@leaf.fm
+---
+
+Hi, I'm Tiara — a data scientist / analyst working across Python and R.
+
+This site collects write-ups of projects I've built or analyses I've run. Each
+post is a reproducible document: the code blocks you see are the actual code
+that produced the figures and tables alongside them.
+
+## Tools I reach for
+
+- **Python:** pandas, scikit-learn, matplotlib, polars
+- **R:** tidyverse, ggplot2, tidymodels
+- **Storage & pipelines:** Snowflake, dbt, dlt, Airflow
+- **Reporting:** Quarto, Rmarkdown, Jupyter

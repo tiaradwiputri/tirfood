@@ -1,0 +1,23 @@
+/* Site-wide overrides */
+
+.quarto-title-banner {
+  background: linear-gradient(135deg, #2c3e50 0%, #4a6fa5 100%);
+}
+
+.listing-description {
+  color: var(--bs-secondary);
+  font-size: 0.95rem;
+}
+
+/* Tighten code-cell output blocks */
+.cell-output {
+  margin-top: 0.25rem;
+}
+
+/* Inline code a touch warmer */
+code:not(.sourceCode) {
+  color: #b3623f;
+  background: rgba(179, 98, 63, 0.08);
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}

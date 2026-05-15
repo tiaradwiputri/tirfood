@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "tirfood"
+  description: "Data science and analytics projects by Tiara."
+  site-url: https://tiaradwptr.github.io/tirfood
+  repo-url: https://github.com/tiaradwptr/tirfood
+  navbar:
+    right:
+      - href: index.qmd
+        text: Projects
+      - href: about.qmd
+        text: About
+      - icon: github
+        href: https://github.com/tiaradwptr
+      - icon: linkedin
+        href: https://www.linkedin.com/
+  page-footer:
+    left: "© 2026 Tiara"
+    right: "Built with [Quarto](https://quarto.org/)"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  freeze: auto

@@ -1,0 +1,48 @@
+---
+title: "Hello, Python"
+subtitle: "An example Quarto post with executable Python code."
+date: "2026-05-15"
+categories: [python, example]
+format:
+  html:
+    code-fold: false
+jupyter: python3
+---
+
+This post is a `.qmd` file with **Python code chunks**. Quarto runs the
+code at render time and inlines the output (numbers, tables, plots) into
+the page. To start a new post, copy this folder and edit `index.qmd`.
+
+## A tiny dataset
+
+```{python}
+import pandas as pd
+
+df = pd.DataFrame({
+    "month": pd.date_range("2026-01-01", periods=6, freq="MS"),
+    "revenue": [120, 138, 155, 162, 180, 205],
+    "channel": ["organic"] * 6,
+})
+df
+```
+
+## A quick plot
+
+```{python}
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots(figsize=(6, 3.5))
+ax.plot(df["month"], df["revenue"], marker="o")
+ax.set_title("Monthly revenue, organic channel")
+ax.set_ylabel("Revenue ($k)")
+ax.grid(alpha=0.3)
+fig.tight_layout()
+plt.show()
+```
+
+## Notes
+
+- Use `jupyter: python3` in the YAML header to enable Python execution.
+- Heavy outputs (model training, big queries) get cached on first render
+  via `freeze: auto` in [_quarto.yml](../../_quarto.yml) — only the chunks
+  you change get re-executed.
