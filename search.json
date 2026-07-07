@@ -1,75 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, I’m Tiara, a data generalist with 10 years of working experience with data.\nI started out as a data science educator in Jakarta 🇮🇩. Now, I build analytics solutions for D2C brands @ Leaf Grow from Newcastle upon Tyne 🏴󠁧󠁢󠁥󠁮󠁧󠁿.\nI mainly work in R, Python, SQL, a bit of statistics, and a whole lot of common sense. I wandered my way through data science, BI, analytics, and data engineering and these days, I’ve accepted my fate as a data generalist."
-  },
-  {
-    "objectID": "about.html#core-stack",
-    "href": "about.html#core-stack",
-    "title": "About",
-    "section": "Core Stack",
-    "text": "Core Stack\n\nAnalytics Engineering, building well-grounded data semantic layers that don’t require everyone to @ me to pull data themselves.\nBusiness Intelligence, actively checking dashboard activity and calling users out for not actually needing an “urgent” dashboard fix.\nData Warehousing, currently in an unhealthy relationship with Snowflake usage alerts thinking I can fix it (Snowflake Compute Cost).\nData Strategy, eliciting, strategising, and planning out team efforts so that I can rub my hands instead of stressing every time executives ask, “why are we not spending time on the other stuff instead?”\n\nStarted documenting my work so future me can thank present me. On good days, I also post my thoughts along the way."
-  },
-  {
-    "objectID": "posts/hello-python/index.html",
-    "href": "posts/hello-python/index.html",
-    "title": "Hello, Python",
-    "section": "",
-    "text": "This post is a .qmd file with Python code chunks. Quarto runs the code at render time and inlines the output (numbers, tables, plots) into the page. To start a new post, copy this folder and edit index.qmd."
-  },
-  {
-    "objectID": "posts/hello-python/index.html#a-tiny-dataset",
-    "href": "posts/hello-python/index.html#a-tiny-dataset",
-    "title": "Hello, Python",
-    "section": "A tiny dataset",
-    "text": "A tiny dataset\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"month\": pd.date_range(\"2026-01-01\", periods=6, freq=\"MS\"),\n    \"revenue\": [120, 138, 155, 162, 180, 205],\n    \"channel\": [\"organic\"] * 6,\n})\ndf\n\n\n\n\n\n\n\n\nmonth\nrevenue\nchannel\n\n\n\n\n0\n2026-01-01\n120\norganic\n\n\n1\n2026-02-01\n138\norganic\n\n\n2\n2026-03-01\n155\norganic\n\n\n3\n2026-04-01\n162\norganic\n\n\n4\n2026-05-01\n180\norganic\n\n\n5\n2026-06-01\n205\norganic"
-  },
-  {
-    "objectID": "posts/hello-python/index.html#a-quick-plot",
-    "href": "posts/hello-python/index.html#a-quick-plot",
-    "title": "Hello, Python",
-    "section": "A quick plot",
-    "text": "A quick plot\n\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots(figsize=(6, 3.5))\nax.plot(df[\"month\"], df[\"revenue\"], marker=\"o\")\nax.set_title(\"Monthly revenue, organic channel\")\nax.set_ylabel(\"Revenue ($k)\")\nax.grid(alpha=0.3)\nfig.tight_layout()\nplt.show()"
-  },
-  {
-    "objectID": "posts/hello-python/index.html#notes",
-    "href": "posts/hello-python/index.html#notes",
-    "title": "Hello, Python",
-    "section": "Notes",
-    "text": "Notes\n\nUse jupyter: python3 in the YAML header to enable Python execution.\nHeavy outputs (model training, big queries) get cached on first render via freeze: auto in _quarto.yml — only the chunks you change get re-executed."
-  },
-  {
-    "objectID": "walkthrough.html",
-    "href": "walkthrough.html",
-    "title": "Hello, Quarto",
-    "section": "",
-    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
-  },
-  {
-    "objectID": "walkthrough.html#markdown",
-    "href": "walkthrough.html#markdown",
-    "title": "Hello, Quarto",
-    "section": "",
-    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
-  },
-  {
-    "objectID": "walkthrough.html#code-cell",
-    "href": "walkthrough.html#code-cell",
-    "title": "Hello, Quarto",
-    "section": "Code Cell",
-    "text": "Code Cell\nHere is a Python code cell:\n\nimport os\nos.cpu_count()\n\n12"
-  },
-  {
-    "objectID": "walkthrough.html#equation",
-    "href": "walkthrough.html#equation",
-    "title": "Hello, Quarto",
-    "section": "Equation",
-    "text": "Equation\nUse LaTeX to write equations:\n\\[\n\\chi' = \\sum_{i=1}^n k_i s_i^2\n\\]"
-  },
-  {
     "objectID": "posts/hello-r/index.html",
     "href": "posts/hello-r/index.html",
     "title": "Hello, R",
@@ -103,5 +33,75 @@
     "title": "Projects",
     "section": "",
     "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHello, Python\n\n\nAn example Quarto post with executable Python code.\n\n\n\npython\n\nexample\n\n\n\n\n\n\nMay 15, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nHello, R\n\n\nAn example Quarto post with executable R code.\n\n\n\nr\n\ntidyverse\n\nexample\n\n\n\n\n\n\nMay 14, 2026\n\n1 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi! I’m Tiara, a data generalist with background in education and e-commerce analytics. On a good day you’ll find me out for a run and on a rainy one, playing games and hanging out with cats.\nTen years in the industry of data, I’ve worked closely with R, Python, and SQL. The hard part is rarely putting in the code, it’s asking the right question to head in the right direction.\nThese days I lead a team of data engineer, analytics engineer, and BI developer. We’re a lean team delivering data value that actually matters to the people who use it. I still tinker across the whole stack: piping, modeling, reporting, and mining, but most of my time I spend to coach and mentor. I genuinely love to see how my team’s craft has grown over the years with their skills and confidence.\nA few things I’m proud of:\nThis site is my case-study archive — write-ups of projects I’ve built, analyses I’ve run, and the occasional thought on data, analytics, and data science. Welcome, and enjoy your stay!"
+  },
+  {
+    "objectID": "about.html#tools-i-reach-for",
+    "href": "about.html#tools-i-reach-for",
+    "title": "About",
+    "section": "Tools I reach for",
+    "text": "Tools I reach for\n\nPython: general scripting, data ingesting, data wrangling, data visualization, machine learning\nR: Tidyverse, data wrangling, statistical modeling, data visualization, report building\nStorage & pipelines: Snowflake, dbt, dlt, Airflow, GCP, BigQuery, Cloudflare, Grafana\nReporting: Looker, Rmarkdown, Jupyter, and whatever else is needed to get the job done."
+  },
+  {
+    "objectID": "walkthrough.html",
+    "href": "walkthrough.html",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "walkthrough.html#markdown",
+    "href": "walkthrough.html#markdown",
+    "title": "Hello, Quarto",
+    "section": "",
+    "text": "Markdown is an easy to read and write text format:\n\nIt’s plain text so works well with version control\nIt can be rendered into HTML, PDF, and more\nLearn more at: https://quarto.org/docs/authoring/"
+  },
+  {
+    "objectID": "walkthrough.html#code-cell",
+    "href": "walkthrough.html#code-cell",
+    "title": "Hello, Quarto",
+    "section": "Code Cell",
+    "text": "Code Cell\nHere is a Python code cell:\n\nimport os\nos.cpu_count()\n\n12"
+  },
+  {
+    "objectID": "walkthrough.html#equation",
+    "href": "walkthrough.html#equation",
+    "title": "Hello, Quarto",
+    "section": "Equation",
+    "text": "Equation\nUse LaTeX to write equations:\n\\[\n\\chi' = \\sum_{i=1}^n k_i s_i^2\n\\]"
+  },
+  {
+    "objectID": "posts/hello-python/index.html",
+    "href": "posts/hello-python/index.html",
+    "title": "Hello, Python",
+    "section": "",
+    "text": "This post is a .qmd file with Python code chunks. Quarto runs the code at render time and inlines the output (numbers, tables, plots) into the page. To start a new post, copy this folder and edit index.qmd."
+  },
+  {
+    "objectID": "posts/hello-python/index.html#a-tiny-dataset",
+    "href": "posts/hello-python/index.html#a-tiny-dataset",
+    "title": "Hello, Python",
+    "section": "A tiny dataset",
+    "text": "A tiny dataset\n\nimport pandas as pd\n\ndf = pd.DataFrame({\n    \"month\": pd.date_range(\"2026-01-01\", periods=6, freq=\"MS\"),\n    \"revenue\": [120, 138, 155, 162, 180, 205],\n    \"channel\": [\"organic\"] * 6,\n})\ndf\n\n\n\n\n\n\n\n\nmonth\nrevenue\nchannel\n\n\n\n\n0\n2026-01-01\n120\norganic\n\n\n1\n2026-02-01\n138\norganic\n\n\n2\n2026-03-01\n155\norganic\n\n\n3\n2026-04-01\n162\norganic\n\n\n4\n2026-05-01\n180\norganic\n\n\n5\n2026-06-01\n205\norganic"
+  },
+  {
+    "objectID": "posts/hello-python/index.html#a-quick-plot",
+    "href": "posts/hello-python/index.html#a-quick-plot",
+    "title": "Hello, Python",
+    "section": "A quick plot",
+    "text": "A quick plot\n\nimport matplotlib.pyplot as plt\n\nfig, ax = plt.subplots(figsize=(6, 3.5))\nax.plot(df[\"month\"], df[\"revenue\"], marker=\"o\")\nax.set_title(\"Monthly revenue, organic channel\")\nax.set_ylabel(\"Revenue ($k)\")\nax.grid(alpha=0.3)\nfig.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "posts/hello-python/index.html#notes",
+    "href": "posts/hello-python/index.html#notes",
+    "title": "Hello, Python",
+    "section": "Notes",
+    "text": "Notes\n\nUse jupyter: python3 in the YAML header to enable Python execution.\nHeavy outputs (model training, big queries) get cached on first render via freeze: auto in _quarto.yml — only the chunks you change get re-executed."
   }
 ]
