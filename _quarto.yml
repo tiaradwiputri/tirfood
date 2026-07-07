@@ -5,8 +5,8 @@ project:
 website:
   title: "tirfood"
   description: "Data science and analytics projects by Tiara."
-  site-url: https://tiaradwptr.github.io/tirfood
-  repo-url: https://github.com/tiaradwptr/tirfood
+  site-url: https://tiaradwiputri.github.io/tirfood
+  repo-url: https://github.com/tiaradwiputri/tirfood
   navbar:
     right:
       - href: index.qmd
@@ -14,7 +14,7 @@ website:
       - href: about.qmd
         text: About
       - icon: github
-        href: https://github.com/tiaradwptr
+        href: https://github.com/tiaradwiputri
       - icon: linkedin
         href: https://www.linkedin.com/
   page-footer:

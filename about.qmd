@@ -5,24 +5,34 @@ about:
   links:
     - icon: github
       text: GitHub
-      href: https://github.com/tiaradwptr
+      href: https://github.com/tiaradwiputri
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/
+      href: https://www.linkedin.com/in/tiaradwptr/
     - icon: envelope
       text: Email
-      href: mailto:tiara@leaf.fm
+      href: mailto:tiara.dwiputri94@gmail.com
 ---
 
-Hi, I'm Tiara — a data scientist / analyst working across Python and R.
+Hi! I'm Tiara, a data generalist with background in education and e-commerce analytics. On a good day you'll find me out for a run and on a rainy one, playing games and hanging out with cats.
 
-This site collects write-ups of projects I've built or analyses I've run. Each
-post is a reproducible document: the code blocks you see are the actual code
-that produced the figures and tables alongside them.
+Ten years in the industry of data, I've worked closely with R, Python, and SQL. The hard part is rarely putting in the code, it's asking the right question to head in the right direction.
+
+These days I lead a team of data engineer, analytics engineer, and BI developer. We're a lean team delivering data value that actually matters to the people who use it. I still tinker across the whole stack: piping, modeling, reporting, and mining, but most of my time I spend to coach and mentor. I genuinely love to see how my team's craft has grown over the years with their skills and confidence.
+
+A few things I'm proud of:
+
+- **Grew a teaching team for 5×** — from 3 to 15+ data educators, each with their own specialization, while maintaining curriculum quality delivered.
+- **Developed data science curriculums that's graduated 5,000+ professionals** and served 20+ corporate clients across Indonesia.
+- **Built data team from zero** from ad-hoc report support without data infrastructure, to simple dashboards, to a full product-first data team running pipelines, models, analytics, and dashboards.
+- **Built the data platform and semantic layer behind 20+ e-commerce brands**, wiring together primary e-comm and digital-marketing sources: Meta, Google, TikTok, Shopify, Klaviyo, GA4, Stripe, BigCommerce, and more.
+- **Championed data literacy** and the adoption of AI- and agent-assisted analytics to sharpen decisions and business outcomes.
+
+This site is my case-study archive — write-ups of projects I've built, analyses I've run, and the occasional thought on data, analytics, and data science. Welcome, and enjoy your stay!
 
 ## Tools I reach for
 
-- **Python:** pandas, scikit-learn, matplotlib, polars
-- **R:** tidyverse, ggplot2, tidymodels
-- **Storage & pipelines:** Snowflake, dbt, dlt, Airflow
-- **Reporting:** Quarto, Rmarkdown, Jupyter
+- **Python:** general scripting, data ingesting, data wrangling, data visualization, machine learning
+- **R:** Tidyverse, data wrangling, statistical modeling, data visualization, report building
+- **Storage & pipelines:** Snowflake, dbt, dlt, Airflow, GCP, BigQuery, Cloudflare, Grafana
+- **Reporting:** Looker, Rmarkdown, Jupyter, and whatever else is needed to get the job done.
