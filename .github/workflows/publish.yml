@@ -24,15 +24,8 @@ jobs:
           r-version: "release"
           use-public-rspm: true
 
-      - name: Install R packages
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            any::tibble
-            any::dplyr
-            any::ggplot2
-            any::rmarkdown
-            any::knitr
+      - name: Restore R packages (renv)
+        uses: r-lib/actions/setup-renv@v2
 
       - name: Set up Python
         uses: actions/setup-python@v5

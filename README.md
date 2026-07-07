@@ -5,7 +5,7 @@ deployed to GitHub Pages. Posts can be written in either **Python (`.qmd`)** or
 **R / Rmarkdown (`.Rmd`)** — Quarto executes the code on render and inlines
 the output (tables, figures) alongside the prose.
 
-Live site: <https://tiaradwptr.github.io/tirfood>
+Live site: <https://tiaradwiputri.github.io/tirfood>
 
 ---
 
@@ -45,9 +45,23 @@ pip install -r requirements.txt
 
 **First-time setup — R deps (only if you write `.Rmd` posts):**
 
-```r
-install.packages(c("tibble", "dplyr", "ggplot2", "rmarkdown", "knitr"))
+R dependencies are managed with [renv](https://rstudio.github.io/renv/), so
+they're pinned to exact versions in `renv.lock` and isolated in a
+project-local library (the R equivalent of the Python `.venv`). To install
+them, run from the project root:
+
+```sh
+Rscript -e 'renv::restore()'
 ```
+
+This reads `renv.lock` and installs the recorded package versions into
+`renv/library/` — it won't touch your global R library. renv auto-activates
+whenever R starts in this project (via the committed `.Rprofile`), so Quarto
+picks up the right packages with no extra steps.
+
+When you add or upgrade an R package, install it with `renv::install("pkg")`
+and then re-pin the lockfile with `renv::snapshot()` — commit the updated
+`renv.lock`.
 
 **Every working session — activate the venv first:**
 
